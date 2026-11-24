@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ooty &amp; Masinagudi</title>
+  <meta name="description" content="Two days in the Nilgiris with Mom, 22–23 November 2026. Photos and videos from Ooty and Masinagudi.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Ooty &amp; Masinagudi">
+  <meta property="og:description" content="Two days in the Nilgiris with Mom, 22–23 November 2026.">
+  <meta name="theme-color" content="#e6edef" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#121e27" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preload" as="font" type="font/woff2" href="assets/fonts/young-serif-latin.woff2" crossorigin>
+  <link rel="stylesheet" href="assets/style.css">
+  <link rel="preload" as="image" href="media/photos/IMG_20261122_120453690_HDR.webp" fetchpriority="high">
+  <script>
+    try { var t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+  </script>
+</head>
+<body data-filter="all">
+  <a class="skip" href="#days">Skip to the photos</a>
+
+  <header class="bar" id="bar">
+    <a class="brand" href="#top">Ooty &amp; Masinagudi</a>
+    <nav class="day-links" aria-label="Jump to a day">
+      <a href="#day-1">Day 1</a>
+      <a href="#day-2">Day 2</a>
+    </nav>
+    <div class="filter" role="group" aria-label="Show">
+      <button type="button" data-filter="all" aria-pressed="true">All</button>
+      <button type="button" data-filter="photos" aria-pressed="false">Photos</button>
+      <button type="button" data-filter="videos" aria-pressed="false">Videos</button>
+    </div>
+    <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Use dark theme">
+      <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+        <circle cx="12" cy="12" r="8.25" fill="none" stroke="currentColor" stroke-width="1.5"/>
+        <path d="M12 3.75a8.25 8.25 0 0 1 0 16.5z" fill="currentColor"/>
+      </svg>
+    </button>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="trip-title">
+      <div class="hero-text">
+        <h1 id="trip-title"><span class="line"><span>Ooty &amp;</span></span><span class="line"><span>Masinagudi</span></span></h1>
+        <div class="hero-side">
+          <p class="lede">Two days in the Nilgiris with Mom, <span class="nowrap">22–23 November 2026.</span></p>
+          <p>Gardens and tea hills in Ooty, a forest safari in Masinagudi, then a valley viewpoint and the falls on the second day. Everything is here in the order it happened.</p>
+          <p class="count" id="count">128 photos and 19 videos</p>
+        </div>
+      </div>
+      <figure class="hero-photo">
+        <img src="media/photos/IMG_20261122_120453690_HDR.webp" width="2000" height="900"
+             alt="Mom standing at a hill viewpoint, with forested slopes and a rock peak behind her"
+             fetchpriority="high" decoding="async">
+      </figure>
+    </section>
+
+    <div id="days" class="days">
+      <noscript><p class="noscript">Turn on JavaScript to see the photos and videos.</p></noscript>
+    </div>
+  </main>
+
+  <footer class="foot">
+    <p class="foot-note">Made for Mom, after two good days in the hills.</p>
+    <p class="foot-meta">Ooty and Masinagudi, 22–23 November 2026</p>
+  </footer>
+
+  <dialog id="viewer" class="viewer" aria-label="Photo and video viewer">
+    <div class="v-top">
+      <p class="v-count" id="v-count" aria-live="polite"></p>
+      <div class="v-actions">
+        <a class="v-btn" id="v-download" href="#" download>Download</a>
+        <button type="button" class="v-btn" id="v-close">Close</button>
+      </div>
+    </div>
+    <div class="v-stage" id="v-stage"></div>
+    <button type="button" class="v-nav v-prev" id="v-prev" aria-label="Previous">
+      <svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <button type="button" class="v-nav v-next" id="v-next" aria-label="Next">
+      <svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <div class="v-cap">
+      <p class="v-title" id="v-title"></p>
+      <p class="v-meta" id="v-meta"></p>
+    </div>
+  </dialog>
+
+  <script src="assets/trip.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>

@@ -47,6 +47,7 @@ Then open http://localhost:8000. Opening `index.html` by double-clicking also wo
 4. After a minute or two the site is live at
    `https://YOUR-USERNAME.github.io/ooty-masinagudi-trip/`.
 
-The whole site is about 220 MB. The largest file is 35 MB, well under GitHub's 100 MB per-file limit.
+The whole site is about 200 MB. The largest file is 22 MB, under both GitHub's 100 MB per-file limit
+and the 25 MB limit for uploading files through the GitHub website.
 
 > A public Pages site can be opened by anyone who has the link. Share the link only with people you want to see the photos.
